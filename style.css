@@ -11,13 +11,21 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #f8f9fa;
+}
+
+/* Navigation Bar */
 nav {
     height: 80px;
     background: #1b1b1b;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
     z-index: 1000;
 }
 
@@ -51,7 +59,7 @@ nav ul li a.active {
     background: #fff;
 }
 
-/* Menu Button */
+/* Menu Button  for responsiveness*/
 .menu-btn {
     display: none;
     cursor: pointer;
@@ -70,7 +78,7 @@ nav ul li a.active {
     }
 
     nav {
-        padding: 0 50px;
+        padding: 0 30px;
     }
 
     nav ul {
@@ -106,3 +114,71 @@ nav ul li a.active {
         background: none;
     }
 }
+
+/* Intro Section */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    height: 100vh;
+    padding: 100px 50px;
+    margin-top: 80px;
+}
+
+.text {
+    width: 45%;
+    background: #f8e6c9;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.text p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Image Styling */
+.image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Button */
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c70af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.custom-button:hover {
+    background-color: #3450a1;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .text {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        width: 80%;
+    }
+}
+
