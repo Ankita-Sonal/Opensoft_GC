@@ -342,3 +342,56 @@ nav ul li a.active {
             grid-template-columns: 1fr; /* 1 column on small screens */
         }
     }
+
+    .contact{
+        background-color:#352aad
+    }
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
+        background: url('background.jpg') no-repeat center center fixed;
+        background-size: cover; /* Cover the entire container */
+    }
+    
+    .contact-form {
+        background: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact-form h2 {
+        margin-top: 0;
+    }
+    
+    .contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .contact-form button {
+        padding: 10px 15px;
+        background-color: #007BFF;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
